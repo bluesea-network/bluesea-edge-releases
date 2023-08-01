@@ -1,6 +1,6 @@
 #!/bin/sh
 BRANCH="main"
-URL="https://raw.githubusercontent.com/bluesea-network/bluesea-edge-releases/$BRANCH/jetson/"
+URL="https://raw.githubusercontent.com/bluesea-network/bluesea-edge-releases/$BRANCH/jetson"
 APP_DIR="/var/cache/bluesea-edge"
 
 mkdir -p $APP_DIR
