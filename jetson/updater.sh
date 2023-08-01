@@ -25,7 +25,7 @@ if [ "$VERSION" != "$CURRENT_VERSION" ]; then
     rm -f $APP_DIR/edge-rs-new
     rm -f $APP_DIR/updater.sh-new
     rm -f $APP_DIR/runner.sh-new
-    rm -f $APP_DIR/bluesea-edge-edge.service-new
+    rm -f $APP_DIR/bluesea-edge.service-new
 
     wget -O $APP_DIR/edge-rs-new.tar.gz "$VERSION"
     rm -rf /tmp/edge-rs-new
@@ -34,7 +34,7 @@ if [ "$VERSION" != "$CURRENT_VERSION" ]; then
     mv /tmp/edge-rs-new/* $APP_DIR/edge-rs-new
     wget -O $APP_DIR/updater.sh-new "$URL/updater.sh"
     wget -O $APP_DIR/runner.sh-new "$URL/runner.sh"
-    wget -O $APP_DIR/bluesea-edge-edge.service-new "$URL/bluesea-edge-edge.service"
+    wget -O $APP_DIR/bluesea-edge.service-new "$URL/bluesea-edge.service"
 
     rm -f $APP_DIR/edge-rs    
     mv $APP_DIR/edge-rs-new $APP_DIR/edge-rs
@@ -49,7 +49,7 @@ if [ "$VERSION" != "$CURRENT_VERSION" ]; then
     chmod +x $APP_DIR/runner.sh
 
     rm -f /etc/systemd/system/bluesea-edge-agent.service
-    mv $APP_DIR/bluesea-edge-edge.service-new /etc/systemd/system/bluesea-edge-agent.service
+    mv $APP_DIR/bluesea-edge.service-new /etc/systemd/system/bluesea-edge-agent.service
     chmod +x /etc/systemd/system/bluesea-edge-agent.service
 
     echo "$VERSION" > $APP_DIR/current_version
