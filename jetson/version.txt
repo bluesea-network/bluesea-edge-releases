@@ -1,1 +1,1 @@
-https://github.com/bluesea-network/demo-cross-build/releases/download/v0.1.3/demo-cross-build-Linux-aarch64-musl.tar.gz
+https://github.com/bluesea-network/demo-cross-build/releases/download/v0.1.3/demo-cross-build-Linux-aarch64-musl.tar.gz?v=20230811
