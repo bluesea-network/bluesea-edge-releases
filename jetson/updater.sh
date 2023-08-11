@@ -31,6 +31,7 @@ if [ "$VERSION" != "$CURRENT_VERSION" ]; then
     rm -rf /tmp/edge-rs-new
     mkdir -p /tmp/edge-rs-new
     tar -xvf $APP_DIR/edge-rs-new.tar.gz -C /tmp/edge-rs-new
+    rm $APP_DIR/edge-rs-new.tar.gz
     mv /tmp/edge-rs-new/* $APP_DIR/edge-rs-new
     wget -O $APP_DIR/updater.sh-new "$URL/updater.sh"
     wget -O $APP_DIR/runner.sh-new "$URL/runner.sh"
